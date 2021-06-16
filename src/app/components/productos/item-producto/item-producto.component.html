@@ -1,0 +1,79 @@
+<form [formGroup] = "form" (ngSubmit) = "guardar()">
+    <div class="form-group">
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <div class="input-group-text bg-white">
+                    <i class="fas fa-tag"></i>
+                </div>
+            </div>
+            <input type="text" class="form-control" formControlName = "nombre" placeholder="Nombre">
+        </div>
+        <p></p>
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <div class="input-group-text bg-white">
+                    <i class="fas fa-barcode"></i>
+                </div>
+            </div>
+            <input type="text" class="form-control" formControlName = "codigobarras" placeholder="Código de barras">
+        </div>
+        <p></p>
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <div class="input-group-text bg-white">
+                    <i class="fas fa-certificate"></i>
+                </div>
+            </div>
+            <input type="dropdown" class="form-control" formControlName = "categoriaid" placeholder="Categoría">
+        </div>
+        <p></p>
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <div class="input-group-text bg-white">
+                    <i class="fas fa-certificate"></i>
+                </div>
+            </div>
+            <input type="dropdown" class="form-control" formControlName = "marcaid" placeholder="Marca">
+        </div>
+        <p></p>
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <div class="input-group-text bg-white">
+                    <i class="fas fa-user-circle"></i>
+                </div>
+            </div>
+            <input type="dropdown" class="form-control" formControlName = "proveedorid" placeholder="Proveedor">
+        </div>
+        <p></p>
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <div class="input-group-text bg-white">
+                    <i class="fas fa-certificate"></i>
+                </div>
+            </div>
+            <input type="text" class="form-control" formControlName = "medidas" placeholder="Medidas">
+        </div>
+        <p></p>
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <div class="input-group-text bg-white">
+                    <i class="fas fa-angle-up"></i>
+                </div>
+            </div>
+            <input type="text" class="form-control" formControlName = "precio" placeholder="precio">
+        </div>
+        <p></p>
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <div class="input-group-text bg-white">
+                    <i class="fas fa-certificate"></i>
+                </div>
+            </div>
+            <input type="text" class="form-control" formControlName = "stock" placeholder="Stock">
+        </div>
+        <p></p>
+        <div class="form-group">
+            <button class="btn btn-success btn-lg btn-block" [disabled]="form.invalid" type = "submit"><i class="fas fa-database"></i> Aceptar</button>
+        </div>
+    </div>
+</form>
